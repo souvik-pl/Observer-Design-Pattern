@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeLearn | profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            KodeLearn
+        </div>
+        <nav>
+            <a>Kode Ground</a>
+            <a>Kode Events</a>
+            <a>Study Materials</a>
+            <a class="nav_active">My profile</a>
+            <a>About us</a>
+            <a>help</a>
+        </nav>
+    </aside>
+    <div>
+        <div class="top_navbar">
+            <input placeholder="Search for coding topics, events etc."/>
+            <img id="profile_pic_1" src="avatar.svg">
+        </div>
+        <section>
+            <header>
+                My Profile
+            </header>
+            <div class="profile_pic_container">
+                <img id="profile_pic_2" src="avatar.svg">
+                <div>
+                    <p>This photo will be visible to all KodeLearn users.</p>
+                    <button id="upload_btn">Upload photo</button>
+                    <input id="upload_input" type="file" accept="image/*" hidden />
+                </div>
+            </div>
+            <div class="personal_info">
+                <div class="info_field">
+                    <label>Name</label>
+                    <div>Souvik Paul</div>
+                </div>
+                <div class="info_field">
+                    <label>Email</label>
+                    <div>souvik.9401@gmail.com</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

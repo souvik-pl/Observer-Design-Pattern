@@ -1,0 +1,171 @@
+:root {
+    --brand_color: #1A73E8;
+    --brand_color_light: #d2e3fc;
+    --font_color: #202124;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--font_color);
+}
+
+body {
+    display: flex;
+    background-color: #F1F3F4;
+}
+
+body > aside {
+    width: 250px;
+    height: 100vh;
+}
+
+body > aside > .logo {
+    width: 100%;
+    height: 75px;
+    color: var(--brand_color);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+body > aside > nav {
+    width: 100%;
+    height: max-content;
+    margin-top: 25px;
+}
+
+body > aside > nav a {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body > aside > nav a:hover, .nav_active {
+    background-color: var(--brand_color_light);
+    color: var(--brand_color);
+}
+
+body > div {
+    width: calc(100% - 250px);
+    height: 100vh;
+}
+
+body > div > .top_navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+body > div > .top_navbar > input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    padding: 0 20px 0 20px;
+}
+
+body > div > .top_navbar > input:focus {
+    outline: none;
+}
+
+body > div > .top_navbar > input::placeholder {
+    color: lightgray;
+}
+
+body > div > .top_navbar > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+body > div > section {
+    width: 100%;
+    height: calc(100% - 75px);
+    padding: 25px 20px 20px 20px;
+}
+
+body > div > section > header {
+    font-size: 25px;
+}
+
+body > div > section > .profile_pic_container {
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+body > div > section > .profile_pic_container > img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+body > div > section > .profile_pic_container > div {
+    margin-left: 40px;
+}
+
+body > div > section > .profile_pic_container > div > p {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+body > div > section > .profile_pic_container > div > button {
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+    color: var(--brand_color);
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+body > div > section > .profile_pic_container > div > button:hover {
+    box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+    background-color: #fafafb;
+}
+
+body > div > section > .personal_info {
+    width: 100%;
+    height: max-content;
+    margin-top: 40px;
+}
+
+body > div > section > .personal_info > .info_field {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+body > div > section > .personal_info > .info_field > label {
+    width: 170px;
+    padding-left: 10px;
+}
+
+body > div > section > .personal_info > .info_field > div {
+    width: 330px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
